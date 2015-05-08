@@ -25,12 +25,25 @@ class ViewController: UIViewController {
     func loadMathJaxDemo(sender: UIButton){
         NSLog("Standard demo loaded");
         
-        let htmlView = UIWebView(frame: CGRectMake(0.0, 0.0, 320.0, 480.0));
+        let htmlView = UIWebView(frame: self.view.frame);
         let path = NSBundle.mainBundle().pathForResource("sample", ofType: "html", inDirectory: "MathJax/test")
         htmlView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath:path!)!));
         htmlView.scalesPageToFit = true;
+        htmlView.autoresizingMask = .FlexibleHeight | .FlexibleWidth
+        
+        self.view.autoresizesSubviews = true;
+        
         self.view.addSubview(htmlView);
     }
     
+    
+    override func shouldAutorotate() -> Bool {
+        return true
+    }
+    
+    // http://stackoverflow.com/questions/27525657/ios-8-upside-down-orientation-xcode-option-enabled-still-doesnt-work
+    override func supportedInterfaceOrientations() -> Int{
+        return Int(UIInterfaceOrientationMask.All.rawValue)
+    }
 
 }
