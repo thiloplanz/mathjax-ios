@@ -1,13 +1,14 @@
 /************************************************************************
-*  
-*  Copyright (c) 2011 Harish Narayanan.
-* 
+*
+*  Copyright (c) 2015 Thilo Planz
+*  Copyright (c) 2011 Harish Narayanan
+*
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
 *  You may obtain a copy of the License at
-* 
+*
 *      http://www.apache.org/licenses/LICENSE-2.0
-* 
+*
 *  Unless required by applicable law or agreed to in writing, software
 *  distributed under the License is distributed on an "AS IS" BASIS,
 *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -16,16 +17,20 @@
 *
 *************************************************************************/
 
-#import <UIKit/UIKit.h>
 
-@class MathJaxIOSViewController;
+import UIKit
 
-@interface MathJaxIOSAppDelegate : NSObject <UIApplicationDelegate> {
+class ViewController: UIViewController {
+    
+    func loadMathJaxDemo(sender: UIButton){
+        NSLog("Standard demo loaded");
+        
+        let htmlView = UIWebView(frame: CGRectMake(0.0, 0.0, 320.0, 480.0));
+        let path = NSBundle.mainBundle().pathForResource("sample", ofType: "html", inDirectory: "MathJax/test")
+        htmlView.loadRequest(NSURLRequest(URL: NSURL(fileURLWithPath:path!)!));
+        htmlView.scalesPageToFit = true;
+        self.view.addSubview(htmlView);
+    }
+    
 
 }
-
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet MathJaxIOSViewController *viewController;
-
-@end

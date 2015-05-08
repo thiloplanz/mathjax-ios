@@ -12,11 +12,11 @@
 		68F22EC5133775880024B36A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F22EC4133775880024B36A /* CoreGraphics.framework */; };
 		68F22ECB133775880024B36A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68F22EC9133775880024B36A /* InfoPlist.strings */; };
 		68F22ECE133775880024B36A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F22ECD133775880024B36A /* main.m */; };
-		68F22ED1133775880024B36A /* MathJaxIOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F22ED0133775880024B36A /* MathJaxIOSAppDelegate.m */; };
 		68F22ED4133775880024B36A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68F22ED2133775880024B36A /* MainWindow.xib */; };
-		68F22ED7133775880024B36A /* MathJaxIOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F22ED6133775880024B36A /* MathJaxIOSViewController.m */; };
 		68F22EDA133775880024B36A /* MathJaxIOSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68F22ED8133775880024B36A /* MathJaxIOSViewController.xib */; };
 		68F22EFD133782AC0024B36A /* MathJax in Resources */ = {isa = PBXBuildFile; fileRef = 68F22EFC133782AC0024B36A /* MathJax */; };
+		B60B0F2F1AFC433800839602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0F2E1AFC433800839602 /* AppDelegate.swift */; };
+		B60B0F311AFC465600839602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0F301AFC465600839602 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,13 +28,11 @@
 		68F22ECA133775880024B36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68F22ECC133775880024B36A /* MathJaxIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MathJaxIOS-Prefix.pch"; sourceTree = "<group>"; };
 		68F22ECD133775880024B36A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		68F22ECF133775880024B36A /* MathJaxIOSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathJaxIOSAppDelegate.h; sourceTree = "<group>"; };
-		68F22ED0133775880024B36A /* MathJaxIOSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathJaxIOSAppDelegate.m; sourceTree = "<group>"; };
 		68F22ED3133775880024B36A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		68F22ED5133775880024B36A /* MathJaxIOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathJaxIOSViewController.h; sourceTree = "<group>"; };
-		68F22ED6133775880024B36A /* MathJaxIOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathJaxIOSViewController.m; sourceTree = "<group>"; };
 		68F22ED9133775880024B36A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MathJaxIOSViewController.xib; sourceTree = "<group>"; };
 		68F22EFC133782AC0024B36A /* MathJax */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MathJax; sourceTree = "<group>"; };
+		B60B0F2E1AFC433800839602 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B60B0F301AFC465600839602 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +80,11 @@
 		68F22EC6133775880024B36A /* MathJaxIOS */ = {
 			isa = PBXGroup;
 			children = (
-				68F22ECF133775880024B36A /* MathJaxIOSAppDelegate.h */,
-				68F22ED0133775880024B36A /* MathJaxIOSAppDelegate.m */,
-				68F22ED5133775880024B36A /* MathJaxIOSViewController.h */,
-				68F22ED6133775880024B36A /* MathJaxIOSViewController.m */,
 				68F22ED2133775880024B36A /* MainWindow.xib */,
 				68F22ED8133775880024B36A /* MathJaxIOSViewController.xib */,
 				68F22EC7133775880024B36A /* Supporting Files */,
+				B60B0F2E1AFC433800839602 /* AppDelegate.swift */,
+				B60B0F301AFC465600839602 /* ViewController.swift */,
 			);
 			path = MathJaxIOS;
 			sourceTree = "<group>";
@@ -168,9 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60B0F2F1AFC433800839602 /* AppDelegate.swift in Sources */,
 				68F22ECE133775880024B36A /* main.m in Sources */,
-				68F22ED1133775880024B36A /* MathJaxIOSAppDelegate.m in Sources */,
-				68F22ED7133775880024B36A /* MathJaxIOSViewController.m in Sources */,
+				B60B0F311AFC465600839602 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +211,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -229,7 +225,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -239,13 +235,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathJaxIOS/MathJaxIOS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MathJaxIOS/MathJaxIOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,11 +253,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathJaxIOS/MathJaxIOS-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MathJaxIOS/MathJaxIOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
